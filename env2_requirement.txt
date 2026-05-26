@@ -1,0 +1,7 @@
+jupyter
+scGIST==1.0
+magic-impute==3.0.0
+scanpy
+scipy
+scikit-learn
+pandas

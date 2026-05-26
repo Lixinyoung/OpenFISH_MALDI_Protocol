@@ -1,0 +1,12 @@
+biopython
+jupyter
+Levenshtein
+networkx
+numpy
+pandarallel
+pandas
+pyfaidx
+pysam
+seqwalk
+tqdm
+primer3-py
