@@ -42,7 +42,7 @@ pip install cucim-cu12   # for CUDA 12
 pip install -r env3_requirement.txt
 ```
 
-## 4. Napari (optional but recommended)
+## 4. MALDI-related (optional but recommended)
 
 We recommend following the [uMAIA tutorial](https://github.com/lamanno-epfl/uMAIA) to install related tools. After installing uMAIA, install napari inside the `uMAIA_env` using:
 
