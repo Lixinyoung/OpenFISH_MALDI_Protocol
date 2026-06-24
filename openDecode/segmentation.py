@@ -163,7 +163,7 @@ def runCellpose_nuclei(para, model_type = 'nuclei', restore_type = 'denoise_nucl
         else:
             pass
             
-        model = denoise.CellposeDenoiseModel(gpu=False, model_type = "nuclei",restore_type = restore_type, chan2_restore=False)
+        model = denoise.CellposeDenoiseModel(gpu=False, model_type = model_type, restore_type = restore_type, chan2_restore=False)
         
         log.info("Running Cellpose nuclei...")
     
@@ -228,7 +228,7 @@ def runCellpose_cyto(para, model_type = 'cyto3', restore_type="deblur_cyto3", di
 
         model = denoise.CellposeDenoiseModel(gpu=gpu, model_type="cyto3",restore_type=restore_type, chan2_restore=True)
 
-        masks, flows, styles, imgs_dn = model.eval(img, channels=[1,3], diameter=diameter,flow_threshold=flow_threshold, cellprob_threshold=cellprob_threshold, batch_size = batch_size)
+        masks, flows, styles, imgs_dn = model.eval(img, channels=[3,1], diameter=diameter,flow_threshold=flow_threshold, cellprob_threshold=cellprob_threshold, batch_size = batch_size)
 
         io.save_masks(img, masks, flows, "Cellpose", savedir = filedir, png = False, tif = True, channels=[1, 3], save_outlines=True)
 
