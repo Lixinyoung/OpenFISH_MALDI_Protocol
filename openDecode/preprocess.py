@@ -6,6 +6,9 @@ Last modified: 2026.5.24
 
 import logging
 
+import torch
+import torch.nn.functional as F
+
 from basicpy import BaSiC
 from tqdm import tqdm
 import pandas as pd
