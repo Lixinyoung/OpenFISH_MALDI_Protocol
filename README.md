@@ -55,7 +55,7 @@ Napari can also be installed as a [standalone application](https://napari.org/st
 
 ## Demo Data
 
-Demo data can be downloaded from Zenodo (link to be added).
+Demo data can be downloaded from Zenodo (https://zenodo.org/records/20390362).
 
 ## Jupyter Notebooks Explanation
 
