@@ -37,6 +37,8 @@ python -m pip install cellpose
 pip install --no-deps m2stitch
 ```
 
+You can change the 'np.float_' in the m2stitch package to 'np.float64' manually if you install a higher version of numpy
+
 Install `cucim` according to your CUDA version (Windows systems are not supported):
 
 ```bash
