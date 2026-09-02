@@ -7,7 +7,7 @@ We recommend using Conda (Miniconda or Anaconda) to create the following environ
 ## 1. OpenFISH probe environment
 
 ```bash
-conda create -n openFISH_probe python>=3.10
+conda create -n openFISH_probe python==3.9
 conda activate openFISH_probe
 pip install -r env1_requirement.txt
 ```
@@ -20,6 +20,9 @@ Then, install NUPACK:
 ```bash
 conda create -n openFISH_genepanel python==3.7.11
 conda activate openFISH_genepanel
+```
+Install scGIST following https://github.com/yafi38/scGIST, you may clone the scGIST and add it into the $PYTHONPATH
+```bash
 pip install -r env2_requirement.txt
 ```
 
